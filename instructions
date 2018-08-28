@@ -1,2 +1,19 @@
+########################################################################
+#  update kali to the latest and the reboot
+########################################################################
+
 apt update && apt dist-upgrade && reboot
+
+########################################################################
+#  Install hashcat and the needed drivers  and libraries reboot again
+########################################################################
+
 apt install hashcat nvidia-driver ocl-icd-libopencl1 nvidia-opencl-common
+reboot
+
+########################################################################
+#  verify things are working with nvidia and then with hashcat
+########################################################################
+
+nvidia-smi
+hashcat -I
