@@ -1,0 +1,2 @@
+apt update && apt dist-upgrade && reboot
+apt install hashcat nvidia-driver ocl-icd-libopencl1 nvidia-opencl-common
